@@ -1,14 +1,13 @@
 import Image from "next/image"
 
 function Card(props) {
-    // let techs = props.techs.map((tech)=>{
-    //     return(
-    //         <>
-    //             <p className=' border border-sky-300 p-2'>{tech}</p>
-    //         </>
+    const techs = [
+        {tech: props.card1},
+        {tech: props.card2},
+        {tech: props.card3},
+        {tech: props.card4}
+    ]
 
-    //     )
-    // })
     return (
         <div className='font-bold bg-zinc-700 text-sky-300 w-full h-full flex flex-col  border border-sky-300' >
             <div className="flex items-center justify-center">
