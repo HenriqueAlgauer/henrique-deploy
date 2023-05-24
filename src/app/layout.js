@@ -1,4 +1,7 @@
 import './globals.css'
+import { Aside } from '@/components/aside/aside'
+import { Navbar } from '@/components/nav/navbar'
+import { Footer } from '@/components/footer/footer'
 
 export const metadata = {
   title: 'Henrique Algauer',
@@ -8,8 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-zinc-700 font-mono scrollbar-none'>
-        
+
+      <body className='bg-zinc-700 font-mono scrollbar-none flex flex-col justify-between'>
+        <Aside />
+        <div className='pl-20'>
+          <Navbar />
+        </div>
         {children}
         
       </body>

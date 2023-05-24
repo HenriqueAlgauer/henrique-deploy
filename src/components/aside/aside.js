@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import ghub from '../../images/github-icon.svg'
 import linkedin from '../../images/linkedIn-icon.svg'
 import logo from '../../images/ha-logo.png'
@@ -13,7 +14,7 @@ const Aside = () => {
 
       <aside className='h-full bg-zinc-700 fixed flex flex-col justify-between p-4 border-r border-sky-300'>
         <div>
-          <Image src={logo} width={40} height={40} alt="logo" />
+          <Link href='/'> <Image src={logo} width={40} height={40} alt="logo" /></Link>
           {/* <button class="relative group">
               <div class="relative flex items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-sky-300 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
               <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 group-focus:-rotate-[45deg] origin-center">
