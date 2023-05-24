@@ -1,7 +1,6 @@
 import './globals.css'
 import { Aside } from '@/components/aside/aside'
 import { Navbar } from '@/components/nav/navbar'
-import { Footer } from '@/components/footer/footer'
 
 export const metadata = {
   title: 'Henrique Algauer',
