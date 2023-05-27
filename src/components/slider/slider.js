@@ -36,7 +36,7 @@ const Slide = () => {
     }
   });
   return (
-    <div ref={sliderRef} className="keen-slider  " style={{ height: 390 }}>
+    <div ref={sliderRef} className="keen-slider  border-t border-sky-300 md:border-0" style={{ height: 390 }}>
       <div className="keen-slider__slide number-slide1 flex justify-around ">
         <Image src={htmlIcon} height={100} width={100} alt="html-icon" />
         <Image src={css} height={100} width={100} alt="css-icon" />

@@ -10,7 +10,7 @@ const Aside = () => {
   const urlLinkedIn = 'https://www.linkedin.com/in/henrique-machado-algauer-3a850726a/'
 
   return (
-    <div className='relative '>
+    <div className='hidden sm:block'>
 
       <aside className='h-full bg-zinc-700 fixed flex flex-col justify-between p-4 border-r border-sky-300'>
         <div>

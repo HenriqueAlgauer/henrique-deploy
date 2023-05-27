@@ -2,10 +2,10 @@ import Image from "next/image"
 
 function Card(props) {
     const techs = [
-        {tech: props.card1},
-        {tech: props.card2},
-        {tech: props.card3},
-        {tech: props.card4}
+        { tech: props.card1 },
+        { tech: props.card2 },
+        { tech: props.card3 },
+        { tech: props.card4 }
     ]
 
     return (
@@ -17,8 +17,10 @@ function Card(props) {
                 <div className='my-4'>
                     <h2>{props.title}</h2>
                     <p className='my-4'>{props.info}</p>
-                    <a target="_blank" href={props.linkGHub} className='border hover:bg-sky-300 hover:text-zinc-700 mr-4 transition-all delay-100 border-sky-300 p-2'>Repositório GitHub</a>
-                    <a target="_blank" href={props.linkPage} className='border hover:bg-sky-300 hover:text-zinc-700 mr-4 transition-all delay-100 border-sky-300 p-2'>Página do Projeto</a>
+                    <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 ">
+                        <a target="_blank" href={props.linkGHub} className='border hover:bg-sky-300 hover:text-zinc-700 mr-4 text-center transition-all delay-100 border-sky-300 p-2'>Repositório GitHub</a>
+                        <a target="_blank" href={props.linkPage} className='border hover:bg-sky-300 hover:text-zinc-700 mr-4 text-center transition-all delay-100 border-sky-300 p-2'>Página do Projeto</a>
+                    </div>
                 </div>
                 <div className='flex gap-4 flex-wrap '>
                     <p className=' border border-sky-300 p-2'>{props.tech1}</p>

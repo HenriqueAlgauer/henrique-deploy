@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 
       <body className='bg-zinc-700 font-mono scrollbar-none flex flex-col justify-between'>
         <Aside />
-        <div className='pl-20'>
+        <div className='sm:pl-20'>
           <Navbar />
         </div>
         {children}

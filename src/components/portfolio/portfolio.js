@@ -6,7 +6,7 @@ import { Card } from "../card/card"
 
 function Portfolio() {
     return (
-        <div className='bg-zinc-700 px-36 py-28 border-y border-sky-300'>
+        <div className='bg-zinc-700 px-8 sm:px-36 py-28 border-y border-sky-300'>
             <div className='mb-20'>
                 <h2 className='mb-8 text-sky-300 font-bold text-6xl'>Portfólio</h2>
                 <p className='text-xl text-sky-300'>Aqui estão alguns projetos que desenvolvi.
@@ -17,7 +17,7 @@ function Portfolio() {
                     Também tem o repositório no GitHub
                 </p>
             </div>
-            <div className='grid grid-cols-2 gap-12 justify-between'>
+            <div className='lg:grid flex flex-col lg:grid-cols-2 gap-12 justify-between'>
                 <Card image={pokedex}
                     tech1='HTML'
                     tech2='CSS'

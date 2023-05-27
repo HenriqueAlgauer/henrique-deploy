@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <div className='h-full bg-zinc-700 container-2xl flex justify-between '>
-       <div className='pl-20 w-full '>
+       <div className='sm:pl-20 w-full '>
          <main className='w-full'>
            <Welcome/>
            <Portfolio/>
